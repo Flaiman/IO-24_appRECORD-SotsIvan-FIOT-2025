@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .image{
     width: 8%;
@@ -16,15 +17,6 @@
 }
 .htext{
     font-size: 20px;
-}
-.content{
-    margin-top: 20px;
-}
-button{
-    width: 10%;
-    height: 70px;
-    font-size: 16px;
-    border-radius: 1px;
 }
 button:hover{
     cursor: pointer;
@@ -53,12 +45,63 @@ button:hover{
     text-decoration: none;
     background-color: grey;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .btn:hover {
     background-color: #0056b3;
+}
+.sidebar-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+.sidebar-nav{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+    padding: 20px;
+}
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+img{
+    max-width: 100%;
+}
+.sidebar-button{
+    border: 1;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 10px;
+    transition: 0.2s;
+}
+.sidebar-button:hover{
+    background-color: rgb(226, 225, 225);
+}
+.sidebar-button.active{
+    background-color: rgb(52, 170, 103);
+}
+.sidebar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+.highlight { 
+    background-color: yellow; 
+}
+#header1 { 
+    font-size: 24px; 
+}
+.css-styles p{
+    font-size: 24px;
+    font-style: italic;
 }

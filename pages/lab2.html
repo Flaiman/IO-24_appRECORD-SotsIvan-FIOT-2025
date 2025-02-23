@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
+                <h2>З ДИСЦИПЛІНИ «WEB-ОРІЄНТОВНАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК»</h2>
+            </h2>
+            <div class="cont">
+                <p class="htext">Студент групи ІО-24 Соц Іван Іванович</p>
+                <img src="../images/ivan.png" alt="ivan" class="image">
+            </div>
+            <div class="buttons">
+                <a href="../index.html" class="btn">Лабораторна<br>робота №1</a>
+                <a href="lab2.html" class="btn">Лабораторна<br>робота №2</a>
+                <a href="#" class="btn">Лабораторна<br>робота №3</a>
+                <a href="#" class="btn">Лабораторна<br>робота №4</a>
+                <a href="#" class="btn">Лабораторна<br>робота №5</a>
+                <a href="#" class="btn">Лабораторна<br>робота №6</a>
+                <a href="#" class="btn">Лабораторна<br>робота №7</a>
+                <a href="#" class="btn">Лабораторна<br>робота №8</a>
+                <a href="#" class="btn">Лабораторна<br>робота №9</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="sidebar-container">
+        <div class="sidebar-nav">
+            <button class="sidebar-button active" data-toggle="topic">Тема, мета ЛР №2. Місце розташування сайту та
+                звіту</button>
+            <button class="sidebar-button" data-toggle="Connect">Способи підключення стилів</button>
+            <button class="sidebar-button" data-toggle="selectors">Селектори</button>
+            <div class="sidebar-list">
+                <button class="sidebar-button" data-toggle="selectors" data-section="selteg">Селектори тегу</button>
+                <button class="sidebar-button" data-toggle="selectors" data-section="selcl">Селектори класів</button>
+                <button class="sidebar-button" data-toggle="selectors" data-section="selid">Селектори id</button>
+            </div>
+            <button class="sidebar-button" data-toggle="css-styles">CSS: Шрифти Текст Таблиці Фон Контур Списки</button>
+            <button class="sidebar-button" data-toggle="conclusion">Висновки</button>
+        </div>
+        <div class="sidebar-content">
+            <main>
+                <div class="content">
+                    <div class="topic hiddenable">
+                        <h2 class="center">Тема, мета, місце розташування WEB-застосунка та місце звітного
+                            HTML-документу</h2>
+                        <p class="main_text"><span style="font-weight: bold;">Тема:</span> КАСКАДНІ ТАБЛИЦІ СТИЛІВ.
+                            СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</p>
+                        <p class="main_text"><span style="font-weight: bold;">Мета:</span> Придбати практичні навички
+                            роботи з селекторами, ідентифікаторами, списками, різноманітними властивостями кольору і
+                            фону, зовнішними та внутрішними відступами, плаваючими елементами, оформленням текстових
+                            елементів</p>
+                        <ul class="main_text">
+                            <li><a href="https://github.com/Flaiman/IO-24_appWEB-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій власного WEB-застосунку</a></li>
+                            <li><a href="https://flaiman.github.io/IO-24_appWEB-SotsIvan-FIOT-2025/">Посилання на
+                                    репозиторій на живу сторінку власного WEB-застосунку</a></li>
+                            <li><a href="https://github.com/Flaiman/IO-24_appRECORD-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій звітного HTML-документа</a></li>
+                            <li><a href="#">Посилання на репозиторій на живу сторінку звітного HTML-документу</a></li>
+                        </ul>
+                    </div>
+                    <div class="Connect hiddenable">
+                        <h2 class="center">СПОСОБИ ПІДКЛЮЧЕННЯ СТИЛІВ</h2>
+                        <section class="main_text">
+                            <p style="font-size: 24px;">Існує три основні способи підключення CSS до HTML:</span>
+                            <ol>
+                                <li><span style="font-weight: bolder;">Вбудований стиль (inline CSS)</span> – додається
+                                    безпосередньо в атрибут style елемента.<br>
+                                    &ltp style="color: red;"&gtЦей текст червоний&lt/p&gt
+                                    <code>
+                                        <p style="color: red;">Цей текст червоний</p>
+                                    </code>
+                                </li>
+                                <li><span style="font-weight: bolder;">Внутрішній стиль (internal CSS)</span> –
+                                    прописується у &ltstyle&gt всередині &lthead&gt <br>
+                                    &ltstyle&gt <br>
+                                    p { color: blue; } <br>
+                                    &lt/style&gt
+                                </li>
+                                <li><span style="font-weight: bolder;">Зовнішній стиль (external CSS)</span> –
+                                    підключається через окремий файл .css за допомогою <br>
+                                    &ltlink rel="stylesheet" href="styles.css"&gt
+
+                                </li>
+                                </p>
+                        </section>
+                    </div>
+                    <div class="selectors main_text hiddenable">
+                        <h2 class="center">СЕЛЕКТОРИ CSS</h2>
+                        <p>Селектор – визначає до якого HTML-елемента буде застосований стиль CSS. Селекторами можуть
+                            бути HTML-елементи, їх класи та ідентифікатори, а також псевдокласи та псевдоелементи.</p>
+                        <h3 id="selteg">СЕЛЕКТОР ТЕГУ</h3>
+                        <p>Селектори тегу (Type Selector) – застосовують стилі до всіх елементів певного типу.</p>
+                        <p>p { color: green; }</p>
+                        <h3 id="selcl">СЕЛЕКТОР КЛАСУ</h3>
+                        <p>Селектори класу (Class Selector) – використовують . перед назвою класу для вибору всіх
+                            елементів із цим класом.</p>
+                        <p>.highlight { background-color: yellow; }</p>
+                        <p>&ltp class="highlight"&gtЦей текст має жовте тло.&lt/p&gt</p>
+                        <p class="highlight">Цей текст має жовте тло.</p>
+                        <h3 id="selid">СЕЛЕКТОР ІДЕНТИФІКАТОРА</h3>
+                        <p>Селектори ідентифікаторів (ID Selector) – використовують # перед ідентифікатором,
+                            застосовується до одного унікального елемента.</p>
+                        <p>#header1 { font-size: 24px; }</p>
+                        <p>
+                            &lth1 id="header1"&gtЗаголовок&lt/h1&gt
+                        </p>
+                        <h1 id="header">Заголовок</h1>
+                    </div>
+                    <div class="css-styles main_text hiddenable">
+                        <h2>ШРИФТИ</h2>
+                        <p>Код:</p>
+                        <img src="../images/font-style.jpg" alt="">
+                        <p>Зображення:</p>
+                        <img src="../images/style-text.jpg" alt="">
+                        
+                        <h2>ТЕКСТ</h2>
+                        <p>Код:</p>
+                        <img src="../images/text.jpg" alt="">
+                        <p>Зображення:</p>
+                        <img src="../images/text_img.jpg" alt="">
+                        
+                        <h2>ТАБЛИЦЯ</h2>
+                        <p>Код:</p>
+                        <img src="../images/table-style.jpg" alt="">
+                        <p>Зображення:</p>
+                        <img src="../images/table-style-img.jpg" alt="">
+
+                        <h2>ФОН</h2>
+                        <p>Код:</p>
+                        <img src="../images/back.jpg" alt="">
+                        <p>Зображення:</p>
+                        <img src="../images/back_img.jpg" alt="">
+
+                        <h2>СПИСКИ</h2>
+                        <p>Код:</p>
+                        <img src="../images/footer_li.jpg" alt="">
+                        <p>Зображення:</p>
+                        <img src="../images/footer_li_img.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="conclusion hiddenable">
+                    <h2 class="center">ВИСНОВОК</h2>
+                    <p class="main_text">У процесі вивчення теми "Каскадні таблиці стилів. Селектори. Ідентифікатори.
+                        Стильове оформлення текстових елементів в HTML-документах" було розглянуто основи використання
+                        CSS для створення сучасного і структурованого веб-дизайну.
+
+                        Завдяки практичним завданням набуті навички роботи з селекторами, включаючи селектори тегів,
+                        класів та ідентифікаторів, а також комбіновані селектори, які допомагають точно визначати, до
+                        яких елементів застосовуються стилі. Освоєно використання кольорів, фонів, відступів (margin,
+                        padding), плаваючих елементів (float), що дозволяє створювати адаптивні та привабливі макети
+                        веб-сторінок.
+
+                        Окрему увагу приділено стилізації текстових елементів, зокрема змінам шрифтів, розміру тексту,
+                        міжрядкового інтервалу та оформленню заголовків, абзаців і списків.
+
+                        Отримані знання та практичний досвід дозволяють ефективно застосовувати CSS у розробці
+                        веб-інтерфейсів, роблячи їх зручними та естетично привабливими.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
