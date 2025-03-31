@@ -105,3 +105,8 @@ img{
     font-size: 24px;
     font-style: italic;
 }
+.conc{
+    font-size: 20px;
+    padding-inline: 50px;
+    margin-left: 50px;
+}
