@@ -1,0 +1,24 @@
+.task2, .task4, .task6, .task7, .task8, .task9, .task10{
+    text-align: center;
+    background-color: rgb(160, 189, 116);
+    padding-bottom: 30px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+.task8 label{
+    display: block;
+}
+.real h2{
+    margin: 0;
+}
+#square {
+    width: 120px;
+    height: 120px;
+    border: 2px dashed red;
+    background-color: transparent; 
+    margin: 20px 30px;
+}
+.main_text li{
+    text-align: start;
+    list-style:disc;
+}
