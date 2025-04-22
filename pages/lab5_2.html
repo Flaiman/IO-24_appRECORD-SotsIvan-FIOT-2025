@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/lab5.2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
+                <h2>З ДИСЦИПЛІНИ «WEB-ОРІЄНТОВНАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК»</h2>
+            </h2>
+            <div class="cont">
+                <p class="htext">Студент групи ІО-24 Соц Іван Іванович</p>
+                <img src="../images/ivan.png" alt="ivan" class="image">
+            </div>
+            <div class="buttons">
+                <a href="../index.html" class="btn">Лабораторна<br>робота №1</a>
+                <a href="lab2.html" class="btn">Лабораторна<br>робота №2</a>
+                <a href="lab3_1.html" class="btn">Лабораторна<br>робота №3.1</a>
+                <a href="lab3_2.html" class="btn">Лабораторна<br>робота №3.2</a>
+                <a href="lab4.html" class="btn">Лабораторна<br>робота №4</a>
+                <a href="lab5.html" class="btn">Лабораторна<br>робота №5.1</a>
+                <a href="lab5_2.html" class="btn">Лабораторна<br>робота №5.2</a>
+                <a href="#" class="btn">Лабораторна<br>робота №6</a>
+                <a href="#" class="btn">Лабораторна<br>робота №7</a>
+                <a href="#" class="btn">Лабораторна<br>робота №8</a>
+                <a href="#" class="btn">Лабораторна<br>робота №9</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="sidebar-container">
+        <div class="sidebar-nav">
+            <button class="sidebar-button active" data-toggle="topic">Тема, мета ЛР №5.2. Місце розташування сайту та
+                звіту</button>
+            <button class="sidebar-button" data-toggle="task">Завдання 1</button>
+            <button class="sidebar-button" data-toggle="real">Завдання 2</button>
+            <button class="sidebar-button" data-toggle="conclusion">Висновки</button>
+        </div>
+        <div class="sidebar-content">
+            <main>
+                <div class="content">
+                    <div class="topic hiddenable">
+                        <h2 class="center">Тема, мета, місце розташування WEB-застосунка та місце звітного
+                            HTML-документу</h2>
+                        <p class="main_text"><span style="font-weight: bold;">Тема:</span> WEB-СХОВИЩЕ. WEB STORAGE API.
+                            МОДУЛЬНОСТЬ КОДУ. СТВОРЕННЯ МОДАЛЬНОГО ВІКНА. ДЕЛЕГУВАННЯ ПОДІЙ. </p>
+                        <p class="main_text"><span style="font-weight: bold;">Мета:</span> Придбати практичні навички
+                            роботи створення модального вікна; повторити процес створення макету, зокрема створення
+                            макету галереї довільних зображень; закріпити навички роботи з делегуванням подій.
+                        </p>
+                        <ul class="main_text">
+                            <li><a href="https://github.com/Flaiman/IO-24_appWEB-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій власного WEB-застосунку</a></li>
+                            <li><a href="https://flaiman.github.io/IO-24_appWEB-SotsIvan-FIOT-2025/">Посилання на
+                                    репозиторій на живу сторінку власного WEB-застосунку</a></li>
+                            <li><a href="https://github.com/Flaiman/IO-24_appRECORD-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій звітного HTML-документа</a></li>
+                            <li><a href="#">Посилання на репозиторій на живу сторінку звітного HTML-документу</a></li>
+                        </ul>
+                    </div>
+                    <div class="task main_text hiddenable">
+                        <ul class="gallery"></ul>
+                    </div>
+                    <div class="real main_text hiddenable">
+                        <form class="feedback-form" autocomplete="off">
+                            <label>
+                                Email
+                                <input type="email" name="email" autofocus />
+                            </label>
+                            <label>
+                                Message
+                                <textarea name="message" rows="8"></textarea>
+                            </label>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="conclusion hiddenable">
+                    <h2 class="center">ВИСНОВОК</h2>
+                    <p class="main_text">У ході виконання практичної роботи було закріплено та поглиблено знання з теми
+                        "WEB-сховище. Web Storage API. Модульність коду. Створення модального вікна. Делегування подій".
+                        Було створено макет галереї зображень із використанням HTML, CSS та JavaScript, реалізовано
+                        динамічне додавання елементів галереї за допомогою масиву об’єктів. Для відображення великої
+                        версії зображення використано бібліотеку basicLightbox, що дозволило створити повноцінне
+                        модальне вікно. При цьому застосовано принцип делегування подій, завдяки якому взаємодія
+                        користувача з галереєю реалізована ефективно й масштабовано. Додатково було створено форму з
+                        полями email та message, значення яких зберігаються у локальному сховищі за допомогою Web
+                        Storage API (localStorage). При завантаженні сторінки відбувається автоматичне відновлення
+                        введених даних, а при відправленні форми — перевірка на заповненість полів, очищення сховища й
+                        об’єкта formData. Уся логіка реалізована у вигляді окремого JavaScript-файлу, що відповідає
+                        принципам модульності. Таким чином, мети роботи досягнуто: набуто практичних навичок створення
+                        модального вікна, повторено процес створення макету галереї, закріплено навички роботи з
+                        делегуванням подій та використанням web-сховища.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+    <script src="../scripts/lab5.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+</body>
+
+</html>

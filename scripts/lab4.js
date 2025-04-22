@@ -14,7 +14,7 @@ function getProductDetails(productId, successCallback, errorCallback) {
     }
 }
 
-getProductDetails(2, 
+getProductDetails(4, 
     (product) => console.log("Деталі товару:", product), 
     (error) => console.error("Помилка:", error)
 );
