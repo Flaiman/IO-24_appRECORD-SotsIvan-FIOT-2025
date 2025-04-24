@@ -110,3 +110,26 @@ img{
     padding-inline: 50px;
     margin-left: 50px;
 }
+@media (max-width: 768px){
+    .buttons{
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+    .cont{
+        flex-direction: column;
+    }
+    .image{
+        width: 60%;
+    }
+    .sidebar-nav{
+        display: none;
+    }
+    .main_text{
+        padding-inline: 15px;
+    }
+    .hiddenable{
+        display: block;
+    }
+}

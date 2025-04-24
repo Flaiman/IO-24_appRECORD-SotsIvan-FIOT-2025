@@ -22,3 +22,8 @@
     text-align: start;
     list-style:disc;
 }
+@media (max-width: 768px){
+    .task2, .task4, .task6, .task7, .task8, .task9, .task10{
+        width: 100%;
+    } 
+}

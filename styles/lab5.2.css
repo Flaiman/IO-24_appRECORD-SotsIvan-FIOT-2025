@@ -46,3 +46,9 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+@media (max-width: 768px){
+  label{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
