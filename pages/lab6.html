@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
+                <h2>З ДИСЦИПЛІНИ «WEB-ОРІЄНТОВНАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК»</h2>
+            </h2>
+            <div class="cont">
+                <p class="htext">Студент групи ІО-24 Соц Іван Іванович</p>
+                <img src="../images/ivan.png" alt="ivan" class="image">
+            </div>
+            <div class="buttons">
+                <a href="../index.html" class="btn">Лабораторна<br>робота №1</a>
+                <a href="lab2.html" class="btn">Лабораторна<br>робота №2</a>
+                <a href="lab3_1.html" class="btn">Лабораторна<br>робота №3.1</a>
+                <a href="lab3_2.html" class="btn">Лабораторна<br>робота №3.2</a>
+                <a href="lab4.html" class="btn">Лабораторна<br>робота №4</a>
+                <a href="lab5.html" class="btn">Лабораторна<br>робота №5.1</a>
+                <a href="lab5_2.html" class="btn">Лабораторна<br>робота №5.2</a>
+                <a href="#" class="btn">Лабораторна<br>робота №6</a>
+                <a href="#" class="btn">Лабораторна<br>робота №7</a>
+                <a href="lab8.html" class="btn">Лабораторна<br>робота №8</a>
+                <a href="lab9.html" class="btn">Лабораторна<br>робота №9</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="sidebar-container">
+        <div class="sidebar-nav">
+            <button class="sidebar-button active" data-toggle="topic">Тема проекту. Посилання на репозиторій</button>
+            <button class="sidebar-button" data-toggle="task">Backend частина</button>
+            <button class="sidebar-button" data-toggle="real">Frontend частина</button>
+            <button class="sidebar-button" data-toggle="conclusion">Висновки</button>
+        </div>
+        <div class="sidebar-content">
+            <main>
+                <div class="content">
+                    <div class="topic hiddenable">
+                        <h2 class="center">Тема, мета, місце розташування WEB-застосунка та місце звітного
+                            HTML-документу</h2>
+                        <p class="main_text"><span style="font-weight: bold;">Тема:</span> АСИНХРОННІСТЬ. ПРОМІСИ.
+                            HTTP-ЗАПИТИ. REST API. AJAX. КРОС-ДОМЕННІ ЗАПИТИ. ПАГІНАЦІЯ. CRUD </p>
+                        <p class="main_text"><span style="font-weight: bold;">Мета:</span> Придбати практичні навички
+                            роботи створення промісу. Методи then(), catch(), finally().Ланцюжки промісів. Методи класу
+                            Promise. Протокол HTTP. Протокол HTTPS.. REST API Формат запиту. HTTP-методи.
+                            HTTP-заголовки. AJAX. Fetch API. Робота з публічним REST API
+                        </p>
+                        <ul class="main_text">
+                            <li><a href="https://github.com/Flaiman/IO-24_appWEB-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій власного WEB-застосунку</a></li>
+                            <li><a href="https://flaiman.github.io/IO-24_appWEB-SotsIvan-FIOT-2025/">Посилання на
+                                    репозиторій на живу сторінку власного WEB-застосунку</a></li>
+                            <li><a href="https://github.com/Flaiman/IO-24_appRECORD-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій звітного HTML-документа</a></li>
+                            <li><a href="#">Посилання на репозиторій на живу сторінку звітного HTML-документу</a></li>
+                        </ul>
+                    </div>
+                    <div class="task main_text hiddenable">
+                        <h2>Асинхронні Функції</h2>
+                        <p>Асинхронні функції (async functions) дозволяють виконувати операції, які можуть займати
+                            певний час (наприклад, зчитування з бази даних або запити до сервера), без блокування
+                            основного потоку виконання коду. Вони створюються з використанням ключового слова async, а
+                            всередині такої функції можна використовувати оператор await, щоб «дочекатися» результату
+                            виконання асинхронної операції.</p>
+                        <h2>Проміси</h2>
+                        <p>Проміс (Promise) — це об'єкт, який представляє майбутній результат асинхронної операції.
+                            Проміси мають три стани:
+                        <ul>
+                            <li style="list-style:disc;">pending (очікування)</li>
+                            <li style="list-style:disc;">fulfilled (виконано успішно)</li>
+                            <li style="list-style:disc;">rejected (помилка)</li>
+                        </ul>
+                        </p>
+                        <h2>API</h2>
+                        <p>API — це інтерфейс, який дозволяє різним програмам взаємодіяти між собою. У бекенд-розробці
+                            зазвичай йдеться про REST API — набір HTTP-ендпоінтів, за допомогою яких фронтенд може
+                            взаємодіяти з базою даних або логікою сервера.
+                            Приклади HTTP-методів API:
+                        <ul>
+                            <li style="list-style:disc;">GET /products — отримати список продуктів</li>
+                            <li style="list-style:disc;">POST /order — створити нове замовлення</li>
+                            <li style="list-style:disc;">PUT /product/:id — оновити товар</li>
+                            <li style="list-style:disc;">DELETE /cart/:id — видалити з кошика</li>
+                        </ul>
+                        </p>
+                        <img src="../images/6_1.jpg" alt="">
+                        <img src="../images/6_2.jpg" alt="">
+                        <img src="../images/6_3.jpg" alt="" style="display: block;">
+                    </div>
+                    <div class="real main_text hiddenable">
+                        <h2>fetch() у фронтенді</h2>
+                        <p>fetch() — це вбудована функція в JavaScript, яка дозволяє відправляти HTTP-запити з браузера.
+                            Вона повертає проміс, тому її можна використовувати з .then() або всередині async/await.
+                            Приклад використання:</p>
+                        <img src="../images/6_4.jpg" alt="">
+                        <p>Таким чином, fetch є містком між фронтендом і бекендом: він надсилає дані з форми або кошика
+                            на сервер, а також отримує відповіді — наприклад, підтвердження замовлення або список
+                            товарів.</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="conclusion hiddenable">
+                    <h2 class="center">ВИСНОВОК</h2>
+                    <p class="main_text">У ході виконання роботи було розглянуто та закріплено ключові поняття та
+                        технології, пов’язані з обробкою асинхронних операцій у веброзробці. Було опановано створення та
+                        використання промісів, а також методів then(), catch(), finally() і побудову ланцюжків промісів.
+                        Це дозволило зрозуміти, як ефективно обробляти асинхронні події, уникати вкладених колбеків і
+                        писати читабельний код.
+
+                        Особливу увагу приділено протоколам HTTP та HTTPS, що є основою для передачі даних між клієнтом
+                        і сервером. Розглянуто структуру HTTP-запитів: методи (GET, POST, PUT, DELETE), формати запитів,
+                        заголовки, а також типові сценарії використання REST API для взаємодії з сервером.
+
+                        Завдяки вивченню AJAX і Fetch API, було набуте практичне розуміння механізмів обміну даними між
+                        фронтендом і бекендом без перезавантаження сторінки. Крім того, опрацьовано роботу з публічними
+                        REST API, що є поширеним способом інтеграції зовнішніх сервісів у вебдодатки.
+
+                        Також було розглянуто поняття крос-доменних запитів і методи їх обробки, а також реалізацію
+                        пагінації як способу оптимізації роботи з великими обсягами даних. У контексті CRUD-операцій
+                        (Create, Read, Update, Delete) отримано навички побудови повноцінного функціоналу
+                        клієнт-серверної взаємодії.
+
+                        У результаті досягнута мета роботи — здобуто практичні навички роботи з асинхронним
+                        програмуванням, промісами, HTTP-запитами та REST API у сучасних вебзастосунках.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

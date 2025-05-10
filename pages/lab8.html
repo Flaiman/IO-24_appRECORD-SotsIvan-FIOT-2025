@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
+                <h2>З ДИСЦИПЛІНИ «WEB-ОРІЄНТОВНАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК»</h2>
+            </h2>
+            <div class="cont">
+                <p class="htext">Студент групи ІО-24 Соц Іван Іванович</p>
+                <img src="../images/ivan.png" alt="ivan" class="image">
+            </div>
+            <div class="buttons">
+                <a href="../index.html" class="btn">Лабораторна<br>робота №1</a>
+                <a href="lab2.html" class="btn">Лабораторна<br>робота №2</a>
+                <a href="lab3_1.html" class="btn">Лабораторна<br>робота №3.1</a>
+                <a href="lab3_2.html" class="btn">Лабораторна<br>робота №3.2</a>
+                <a href="lab4.html" class="btn">Лабораторна<br>робота №4</a>
+                <a href="lab5.html" class="btn">Лабораторна<br>робота №5.1</a>
+                <a href="lab5_2.html" class="btn">Лабораторна<br>робота №5.2</a>
+                <a href="lab6.html" class="btn">Лабораторна<br>робота №6</a>
+                <a href="#" class="btn">Лабораторна<br>робота №7</a>
+                <a href="#" class="btn">Лабораторна<br>робота №8</a>
+                <a href="lab9.html" class="btn">Лабораторна<br>робота №9</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="sidebar-container">
+        <div class="sidebar-nav">
+            <button class="sidebar-button active" data-toggle="topic">Тема проекту. Посилання на репозиторій</button>
+            <button class="sidebar-button" data-toggle="theory">Теоретична частина</button>
+            <button class="sidebar-button" data-toggle="back">Backend частина</button>
+            <button class="sidebar-button" data-toggle="front">Frontend частина</button>
+            <button class="sidebar-button" data-toggle="base">База даних</button>
+            <button class="sidebar-button" data-toggle="conclusion">Висновки</button>
+        </div>
+        <div class="sidebar-content">
+            <main>
+                <div class="content">
+                    <div class="topic hiddenable">
+                        <h2 class="center">Тема, мета, місце розташування WEB-застосунка та місце звітного
+                            HTML-документу</h2>
+                        <p class="main_text"><span style="font-weight: bold;">Тема:</span> MongoDB та Mongoose. Схеми та
+                            методи Mongoose. Деплой на Heroku. </p>
+                        <p class="main_text"><span style="font-weight: bold;">Мета:</span> MongoDB. Створюємо
+                            Mongo-аккаунт, проект Mongo Atlas, кластер. MongoDB Compass. Робота з базою даних MongoDB
+                            через Mongoose. Принципи роботи Mongoose: схема – модель – колекція. Mongoose: створення
+                            схеми (required, enum, default, unique, match). З'єднання Joi та вбудованої в Mongoose
+                            валідації. Методи моделей. Деплой на Heroku.
+                        </p>
+                        <ul class="main_text">
+                            <li><a href="https://github.com/Flaiman/IO-24_appWEB-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій власного WEB-застосунку</a></li>
+                            <li><a href="https://flaiman.github.io/IO-24_appWEB-SotsIvan-FIOT-2025/">Посилання на
+                                    репозиторій на живу сторінку власного WEB-застосунку</a></li>
+                            <li><a href="https://github.com/Flaiman/IO-24_appRECORD-SotsIvan-FIOT-2025">Посилання на
+                                    репозиторій звітного HTML-документа</a></li>
+                            <li><a href="#">Посилання на репозиторій на живу сторінку звітного HTML-документу</a></li>
+                        </ul>
+                    </div>
+                    <div class="theory main_text hiddenable">
+                        <h2>MongoDB Compass</h2>
+                        <p>MongoDB Compass — це графічний інтерфейс для перегляду та керування MongoDB. Підключення до
+                            бази відбувається через той самий URI. У Compass можна переглядати документи, колекції,
+                            писати запити, імпортувати/експортувати дані.</p>
+                        <h2>Mongoose — бібліотека для Node.js</h2>
+                        <p>Mongoose — це ODM (Object Data Modeling) бібліотека, яка дозволяє працювати з MongoDB у стилі
+                            об’єктно-орієнтованого програмування.
+                            Принцип роботи Mongoose:
+                        <ul>
+                            <li>Схема (Schema): опис структури документа (типи даних, валідація)</li>
+                            <li>Модель (Model): об'єкт, який надає доступ до бази (створення, пошук, оновлення)</li>
+                            <li>Колекція (Collection): зберігає документи певного типу</li>
+                        </ul>
+                        </p>
+                        <h2>Frontend and DataBase</h2>
+                        <p>У фронтенді не працюють напряму з MongoDB або Mongoose — це небезпечно. Замість цього:
+                        <ul>
+                            <li>Фронтенд звертається до бекенд-сервера через HTTP-запити (наприклад, fetch(), axios)
+                            </li>
+                            <li>Бекенд обробляє ці запити і працює з MongoDB через Mongoose</li>
+                        </ul>
+                        </p>
+                        <p>Фронтенд не знає нічого про базу даних — він просто надсилає дані на сервер, а сервер
+                            вирішує, як їх обробити.</p>
+                    </div>
+                    <div class="back main_text hiddenable">
+                        <img src="../images/8_3.jpg" alt="">
+                        <img src="../images/8_4.jpg" alt="">
+                    </div>
+                    <div class="front main_text hiddenable">
+                        <img src="../images/8_5.jpg" alt="">
+                        <img src="../images/8_6.jpg" alt="">
+                    </div>
+                    <div class="base main_text hiddenable">
+                        <img src="../images/8_1.jpg" alt="">
+                        <img src="../images/8_2.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="conclusion hiddenable">
+                    <h2 class="center">ВИСНОВОК</h2>
+                    <p class="main_text">У ході вивчення теми було отримано практичні знання та навички з роботи з базою
+                        даних MongoDB у хмарному середовищі MongoDB Atlas, включаючи створення акаунта, проєкту,
+                        кластера та налаштування доступу. Також було ознайомлено з інструментом MongoDB Compass, який
+                        дозволяє візуально переглядати та редагувати базу даних.
+
+                        Особлива увага приділялася роботі з бібліотекою Mongoose, яка є зручною обгорткою для MongoDB у
+                        середовищі Node.js. Було розглянуто ключові принципи: створення схем, моделей та колекцій, що
+                        дозволяє структуровано працювати з даними та забезпечити валідацію на рівні коду.
+
+                        Зокрема, було освоєно основні можливості створення схем у Mongoose, з використанням параметрів:
+
+                        required — обов’язковість поля,
+
+                        enum — перелік допустимих значень,
+
+                        default — значення за замовчуванням,
+
+                        unique — унікальність значення,
+
+                        match — валідація регулярними виразами.
+
+                        У результаті мету роботи досягнуто: набуті практичні навички підключення до MongoDB, створення
+                        структурованих моделей за допомогою Mongoose, та реалізація збереження й обробки даних
+                        відповідно до сучасних стандартів веброзробки.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
